@@ -1,0 +1,12 @@
+table.dataTable {
+    width: 100% !important;
+    font-size: .7rem;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: .5rem;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    margin: 0 .25rem;
+}
