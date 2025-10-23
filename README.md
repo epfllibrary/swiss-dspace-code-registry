@@ -1,4 +1,4 @@
-# 🇨🇭 Swiss DSpace Code Registry (Scenario 2)
+# 🇨🇭 Swiss DSpace Code Registry
 
 A lightweight, structured, and community-contributed **registry of code repositories** related to Swiss DSpace / DSpace-CRIS repositories
 (customizations, middleware, modules, scripts, notebooks, frontends/backends). Data is stored as **YAML** files validated by a **JSON Schema**,
