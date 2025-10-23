@@ -1,0 +1,27 @@
+.tag {
+    display: inline-block;
+    padding: 0.15em 0.6em;
+    border-radius: 0.4em;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #fff;
+    background: #888;
+    white-space: nowrap;
+    line-height: 1.15;
+}
+
+.type-tag {
+    background: #e53935;
+}
+
+/* rouge */
+.lang-tag {
+    background: #1e88e5;
+}
+
+/* bleu  */
+.license-tag {
+    background: #43a047;
+}
+
+/* vert  */

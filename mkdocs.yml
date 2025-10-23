@@ -1,0 +1,42 @@
+site_name: "Swiss DSpace Code Registry"
+site_description: "Community registry of code repositories related to Swiss DSpace / DSpace-CRIS repositories"
+site_url: https://epfllibrary.github.io/swiss-dspace-code-registry
+repo_url: https://github.com/epfllibrary/swiss-dspace-code-registry
+theme:
+  name: material
+  logo: assets/swiss-flag.svg
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+  features:
+    - content.code.copy
+    - navigation.sections
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+nav:
+  - Home: index.md
+  - Institutions: 
+      - List: institutions.md
+  - About: about.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - def_list
+plugins:
+  - search
+extra_css:
+  - https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css        # (pour les tags)
+  - assets/css/datatables.css
+  - assets/css/tags.css
+extra_javascript:
+  - https://code.jquery.com/jquery-3.7.1.min.js
+  - https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js
+  - assets/js/init-datatables.js
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/epfllibrary/swiss-dspace-code-registry

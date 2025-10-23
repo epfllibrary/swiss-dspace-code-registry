@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# MkDocs build outputs
+site/
+.cache/
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/

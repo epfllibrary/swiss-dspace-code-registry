@@ -1,0 +1,29 @@
+# Example: EPFL (Switzerland)
+id: ror:02s376052
+institution: École Polytechnique Fédérale de Lausanne
+repositories:
+  - name: Infoscience
+    url: https://infoscience.epfl.ch
+    api_rest: https://infoscience.epfl.ch/server/api
+    oai_pmh: https://infoscience.epfl.ch/server/oai/openaire4
+    software: dspace-cris
+    dspace_version: "cris-2023.02.06"
+    status: production
+    contact: infoscience@epfl.ch
+    last_verified: "2025-10-23"
+    code:
+      - type: dspace-backend
+        repo: https://github.com/EPFL-Infoscience/dspace-cris
+        description: DSpace-CRIS backend for EPFL institutional repository.
+        language: Java
+        license: BSD 3-Clause
+      - type: dspace-frontend
+        repo: https://github.com/EPFL-Infoscience/dspace-angular
+        description: DSpace-CRIS frontend for EPFL institutional repository.
+        language: Javascript
+        license: BSD 3-Clause
+      - type: middleware
+        repo: https://github.com/epfllibrary/infoscience-imports
+        description: Python ingestion & enrichment pipeline.
+        language: Python
+        license: MIT
