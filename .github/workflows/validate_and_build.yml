@@ -6,13 +6,20 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   validate-build-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
+    environment:
+      name: github-pages                     
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,11 +43,15 @@ jobs:
       - name: Build MkDocs
         run: mkdocs build --strict
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
 
       - name: Deploy to GitHub Pages
+        id: deployment                        
         if: github.ref == 'refs/heads/main'
         uses: actions/deploy-pages@v4
